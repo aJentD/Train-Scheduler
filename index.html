@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid jumbo">
+            <div class="container">
+                <h1 class="display-4 jumboh1">Train Scheduler</h1><br>
+                <p class="lead">Start and Arrival Times</p>
+            </div>
+        </div>
+    </header>
+<div ">
+    <!-- <img id="pic" src="assets/images/whitetrain.png"/> -->
+    <div id="main">
+        <div id="current">
+            <!-- table -->
+            <h4>Current Train Schedule</h4>
+            <table id="current-list">
+                <!-- list of current trains -->
+                <tbody>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency(min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div id="add-list">
+            <h4>Add Train</h4>
+            <form>
+                <label>Train Name<br>
+                <input type="text" name="train" id="train-name"></label><br><br>
+                <label>Destination<br>
+                <input type="text" name="destination" id="destination"></label><br><br>
+                <label>First Train Time (HH:MM - military time)<br>
+                <input type="text" name="first-time" id="first-time"></label><br><br>
+                <label>Frequency<br>
+                <input type="text" name="frequency" id="frequency"></label><br><br><br>
+                <button class="submit-button">Submit</button>
+            </form>
+            <!-- form to add new trains to table above -->
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar sticky-top navbar-light bg-light">
+            <p class="navbar-brand">Copyright Now</p>
+        </nav>
+    </footer>
+<!-- </div> -->
+</body>
+<script src="assets/javascript/app.js"></script>
+</html>

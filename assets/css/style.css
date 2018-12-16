@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    background-image: url(../images/train.png);
+    background-size: 1366px 542px;
+    background-repeat: no-repeat;
+    
+}
+
+.jumbo{
+    background: rbg(255, 255, 255, 0.7);
+    color: black;
+    padding: 15px;
+    margin: 0px;
+    text-align: center; 
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.display-4{
+    font-size: 28px;
+    opacity: 100;
+}
+
+.lead{
+    font-size: 18px;
+}
+
+#main{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+h4{
+    background-color: paleturquoise;
+    color: black; 
+    padding: 5px;
+}
+
+#current, #add-list{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+table{
+    border-bottom: 2px solid paleturquoise;
+}
+
+form, table{
+    
+    font-weight: bold;
+    background-color: white;
+   
+}
+
+input, tr{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+label{
+    margin-left: 12.5%;
+}
+
+.submit-button{
+    padding:10px;
+    background-color: paleturquoise;
+    color: black;
+    font-weight: bold;
+    margin-left: 12.5%;
+
+}
+
+footer{
+    background-color: paleturquoise;
+    color: black;
+    font-size: 14px;
+    padding: 2px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
